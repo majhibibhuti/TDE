@@ -1,0 +1,5 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+NER/data.json filter=lfs diff=lfs merge=lfs -text
+NER/NER.ipynb filter=lfs diff=lfs merge=lfs -text
+transliteration/hin/hin_train.json filter=lfs diff=lfs merge=lfs -text
