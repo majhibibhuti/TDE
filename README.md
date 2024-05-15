@@ -49,6 +49,9 @@ python main.py Translation --port 8050 --manifest manifest.json --vocab vocab.tx
 - `--total_tokens`: The total number of tokens to process (-1 for unlimited).
 - `--reference`: Whether to include reference field (True or False).
 
+  Please make sure to give the data path inside the json file. For reference see the manifest.json file in translation folder.
+  The data should be in this format.
+
 ### Transliteration Module
 
 To use the Transliteration Module, run the main.py script with the following arguments:
@@ -64,6 +67,9 @@ python main.py Transliteration --port 8050 --data data.json --comparison_mode Tr
 - `--names_compared`: Names of the fields to compare (e.g., pred_text_contextnet pred_text_conformer).
 - `--total_tokens`: The total number of tokens to process.
 
+  Please make sure to give the data path inside the json file. For reference see the filepath.json file in tranliteration folder.
+  The data should be in this format.
+
 ### NER Module
 
 To use the NER Module, run the main.py script with the following arguments:
@@ -74,3 +80,6 @@ python main.py NER --port 8050 --data data.json
 
 - `--port`: The serving port for establishing connection.
 - `--data`: Path to the data.json file containing the NER dataset.
+
+  Please make sure to give the data as mentioned in the data.json file in NER Folder.
+  The data should be in this format.
