@@ -70,6 +70,17 @@ python main.py Transliteration --port 8050 --data data.json --comparison_mode Tr
   Please make sure to give the data path inside the json file. For reference see the filepath.json file in tranliteration folder.
   The data should be in this format.
 
+  | original_text   | true_transliteration | predicted_transliteration |
+|-----------------|----------------------|---------------------------|
+| shastragaar     | शस्त्रागार           | शस्त्रागार               |
+| bindhya         | बिन्द्या             | बिन्द्या                 |
+| kirankant       | किरणकांत            | किरणकांत                |
+| yagyopaveet     | यज्ञोपवीत           | यज्ञोपवीत               |
+| ratania         | रटानिया             | रटानिया                 |
+| vaganyache      | वागण्याचे           | वागण्याचे               |
+| deshbharamadhye | देशभरामध्ये        | देशभरामध्ये            |
+
+
 ### NER Module
 
 To use the NER Module, run the main.py script with the following arguments:
