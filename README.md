@@ -50,7 +50,7 @@ python main.py Translation --port 8050 --manifest manifest.json --vocab vocab.tx
 - `--reference`: Whether to include reference field (True or False).
 
   Please make sure to give the data path inside the json file. For reference see the manifest.json file in translation folder.
-  The data should be in this format.
+  The data should be in the format specified in samanantar dataset. Please refer to the official doc of samanantar dataset.
 
 ### Transliteration Module
 
