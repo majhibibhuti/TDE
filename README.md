@@ -68,9 +68,9 @@ python main.py Transliteration --port 8050 --data data.json --comparison_mode Tr
 - `--total_tokens`: The total number of tokens to process.
 
   Please make sure to give the data path inside the json file. For reference see the filepath.json file in tranliteration folder.
-  The data should be in this format.
+  The data should be in this format in csv.
 
-  | original_text   | true_transliteration | predicted_transliteration |
+| original_text   | true_transliteration | predicted_transliteration |
 |-----------------|----------------------|---------------------------|
 | shastragaar     | शस्त्रागार           | शस्त्रागार               |
 | bindhya         | बिन्द्या             | बिन्द्या                 |
@@ -79,6 +79,7 @@ python main.py Transliteration --port 8050 --data data.json --comparison_mode Tr
 | ratania         | रटानिया             | रटानिया                 |
 | vaganyache      | वागण्याचे           | वागण्याचे               |
 | deshbharamadhye | देशभरामध्ये        | देशभरामध्ये            |
+
 
 
 ### NER Module
@@ -94,3 +95,9 @@ python main.py NER --port 8050 --data data.json
 
   Please make sure to give the data as mentioned in the data.json file in NER Folder.
   The data should be in this format.
+
+  ```bash
+  {"words": ["मुझे", "जाना", "चाहिए", "."], "ner": ["O", "O", "O", "O"], "true_ner": ["O", "O", "O", "O"]}
+  {"words": ["सेंट्रल", "लाइब्रेरी"], "ner": ["B-ORG", "I-ORG"], "true_ner": ["B-ORG", "I-ORG"]}
+  {"words": ["वह", "भारत", "विभाजन", "के", "विरुद्ध", "थे", "।"], "ner": ["O", "B-LOC", "O", "O", "O", "O", "O"], "true_ner": ["O", "B-LOC", "O", "O", "O", "O", "O"]}
+  ```
